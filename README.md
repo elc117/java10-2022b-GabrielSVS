@@ -1,6 +1,6 @@
 # java10-2022b-GabrielSVS
 
-### Execução concorrente - Explicação de resultado incorreto
+### 1) Execução concorrente - Explicação de resultado incorreto
 
 Para o exemplo, utilizei o código da pasta **sharedaccount**, removendo o *synchronized* dos métodos que o continha. Iniciei o saldo em *100*. O depósito é feito *duas vezes (incrementando 100)*, e a retirada, *uma vez
 (decrementando 50)*.
@@ -18,7 +18,7 @@ terminou posteriormente, esta acabou **_sobrescrevendo_** o saldo anteriormente 
 
 ![Diagrama ilustrando a execução do código](https://imgur.com/Z6lW43c.png)
 
-### Indo além
+### 2) Indo além
 
 Neste trecho de código abaixo, nunca tinha visto estes nomes de blocos (`try` e `catch`) empregados em um código, e inicialmente, por não conhecer, pareceu ser similar com os blocos if e else.
 
